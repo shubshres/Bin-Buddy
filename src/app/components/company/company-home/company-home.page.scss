@@ -1,0 +1,84 @@
+$colors: (
+    primary: #387ef5,
+    secondary: #32db64,
+    danger: #f53d3d,
+    light: #f4f4f4,
+    dark: #222,
+    vibrant: rgb(102, 51, 153),
+    bright: #ffc125
+);
+
+.navigation-bar {
+    --background: lightgrey;
+    border-color: grey;
+    height: 56px;
+}
+
+.tab-selection {
+    color: grey;
+}
+
+.padding-top-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mapboxgl-map {
+    height: 100vh;
+    width: 100%;
+}
+
+#instructions {
+    position: absolute;
+    width: 90%;
+    top: 0;
+    bottom: 10px;
+    background-color: #fff;
+    overflow-y: scroll;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    background-color: lightgrey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto 20px;
+    left: 4%;
+}
+
+.card {
+    border-radius: 30px;
+    background-color: rgb(225, 225, 225);
+    width: 85%;
+    display: flex;
+    margin: 40px auto 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.feature-buttons {
+    --border-radius: 80px;
+    background-color: lightgrey;
+    width: 80%;
+    display: flex;
+    margin: 20px auto 20px;
+    align-items: center;
+}
+
+.map-title {
+    text-align: center;
+}
+
+.info-page-header {
+    border-radius: 30px;
+    width: 85%;
+    display: flex;
+    margin: 10px auto 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: grey
+}

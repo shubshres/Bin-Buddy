@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="map-title">Route Instructions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mapboxgl-map" id="map"></div>
+</ion-content>
+
+<ion-content>
+  <div id="instructions"></div>
+</ion-content>
+
+<ion-button (click)="nextR()">
+  next route
+</ion-button>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom" class="navigation-bar">
+    <ion-tab-button (click)="goToInfoPage()" class="padding-top-bottom">
+      <ion-icon color="vibrant" name="information-circle-outline" class="tab-selection"></ion-icon>
+      <ion-label color="vibrant">information</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="padding-top-bottom">
+      <ion-icon (click)="goToHomePage()" color="vibrant" name="navigate-outline" class="tab-selection"></ion-icon>
+      <ion-label color="vibrant">truck tracker</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="padding-top-bottom">
+      <ion-icon (click)="goToManagementPage()" color="vibrant" name="car" class="tab-selection"></ion-icon>
+      <ion-label color="vibrant">driver settings</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

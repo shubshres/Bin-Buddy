@@ -1,0 +1,31 @@
+<ion-content>
+    <a href="/resident/home"><ion-icon class="back-button" name="close-outline"></ion-icon></a>
+  <ion-card class="card">
+    <img class="bin-logo" src="assets/Logo/bin.png">
+    <div class="ion-padding">
+      <ion-card-title style="color:grey; text-align: center; margin-top: 10px; margin-bottom: 30px">Sign in to Bin Buddy</ion-card-title>
+      <form (ngSubmit)="login()" [formGroup]="credentials">
+        <ion-input type="email" placeholder="email" formControlName="email" class="input"></ion-input>
+        <ion-input type="password" placeholder="password" formControlName="password" class="input"></ion-input>
+        <!--TO DO: ADD LINK-->
+        <a href="" class="right-justify">forgot password?</a>
+        <ion-button type="submit" class="log-in-button">login</ion-button>
+      </form>
+      <div class="center">
+        <!--TO DO: ADD LINK-->
+        new here?&nbsp;<a href="/resident/register" class="in-line">register</a>
+        <br>
+        <br>
+        or
+        <br>
+        <br>
+        continue as&nbsp;<a href="/resident/home" class="in-line">guest</a>
+      </div>
+      <ion-button fill="clear" class="driver-login-button" href="/company/login">driver login</ion-button>
+    </div>
+  </ion-card>
+    <div style="color:grey; text-align: center;">or sign in with</div>
+    <ion-fab-button class="other-login" (click)="signIn()">
+      <ion-icon name="logo-google"></ion-icon>
+    </ion-fab-button>
+  </ion-content>

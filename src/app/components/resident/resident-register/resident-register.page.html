@@ -1,0 +1,32 @@
+<ion-content>
+  <a href="../">
+    <ion-icon class="back-button" name="arrow-back-sharp"></ion-icon>
+  </a>
+  <ion-card class="card">
+    <img class="bin-logo" src="assets/Logo/bin.png">
+    <div class="ion-padding">
+      <ion-card-title style="color:grey; text-align: center; margin-top: 10px; margin-bottom: 30px">Welcome to Bin Buddy!</ion-card-title>
+      <form (ngSubmit)="register()" [formGroup]="credentials">
+        <ion-input type="email" placeholder="email" formControlName="email" class="input"></ion-input>
+        <ion-input type="password" placeholder="password" formControlName="password" class="input"></ion-input>
+        <ion-button type="submit" class="register-button">register</ion-button>
+      </form>
+      <div class="center">
+        been here?&nbsp;<a href="/resident/login" class="in-line">sign in</a>
+        <br>
+        <br>
+        or
+        <br>
+        <br>
+        continue as&nbsp;<a href="/resident/home" class="in-line">guest</a>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </ion-card>
+  <div style="color:grey; text-align: center; margin-top: 10px">or sign in with</div>
+  <ion-fab-button class="other-login">
+    <ion-icon name="logo-google"></ion-icon>
+  </ion-fab-button>
+</ion-content>

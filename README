@@ -1,0 +1,15 @@
+ng add @angular/fire
+
+npm i @codetrix-studio/capacitor-google-auth
+
+ionic integrations enable capacitor
+
+npm i @capacitor/app @capacitor/haptics @capacitor/keyboard @capacitor/status-bar
+
+ionic cap add ios 
+
+ionic cap add android 
+
+$ npm install cordova-plugin-x-toast 
+$ npm install @awesome-cordova-plugins/toast 
+$ ionic cap sync

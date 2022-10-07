@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bin-buddy-69ae3": {
+      "hosting": {
+        "app": [
+          "bin-buddy-69ae3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bin-buddy-69ae3"
+  }
+}

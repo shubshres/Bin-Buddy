@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-icon class="back-button" name="arrow-back-sharp" (click)="goBack()"></ion-icon>
+  <div>
+    <ion-card class="card">
+      <img class="user-image" src="assets/Avatar-Profile-No-Background.png">
+      <ion-card-title style="color:grey; text-align: center; margin-top: 10px">Update Information</ion-card-title>
+     <!--<form -->
+      <form (ngSubmit)="updateResidentInformation()" [formGroup]="updatedInformation">
+          <ion-input class="input" id="name" type="text" formControlName="name" placeholder="Name"></ion-input>
+          <ion-input class="input" id="address" type="text" formControlName="address" placeholder="Address"></ion-input>
+          <ion-input class="input" id="phoneNumber" type="text" formControlName="phoneNumber" placeholder="Phone Number"></ion-input>
+      </form>
+      <!-- <ion-button type="submit" (click)="updateResidentInformation()" class="submit-button">Submit</ion-button>-->
+      <ion-button type="submit" (click)="updateResidentInformation()" class="submit-button">Submit</ion-button>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-content>
+    <a href="/company/home">
+      <ion-icon class="back-button" name="arrow-back-sharp"></ion-icon>
+    </a>
+  <ion-card class="card">
+    <img class="user-image" src="assets/Avatar-Profile-No-Background.png">
+    <p class="user-name">Hey {{getUserName()}}!</p>
+    <ion-button class="feature-buttons" (click)="logout(); signOut()">Sign Out</ion-button>
+    <br>
+    <br>
+  </ion-card>
+</ion-content>
+
+<!--
+<ion-tabs>
+  <ion-tab-bar slot="bottom" class="navigation-bar">
+    <ion-tab-button (click)="goToInfoPage()" class="padding-top-bottom">
+      <ion-icon color="vibrant" name="information-circle-outline" class="tab-selection"></ion-icon>
+      <ion-label color="vibrant">information</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="padding-top-bottom">
+      <ion-icon (click)="goToHomePage()" color="vibrant" name="navigate-outline" class="tab-selection"></ion-icon>
+      <ion-label color="vibrant">truck tracker</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="padding-top-bottom">
+      <ion-icon (click)="goToManagementPage()" color="vibrant" name="car" class="tab-selection"></ion-icon>
+      <ion-label color="vibrant">driver settings</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+-->

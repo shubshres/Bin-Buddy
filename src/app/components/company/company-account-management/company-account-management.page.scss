@@ -1,0 +1,75 @@
+$colors: (
+    primary: #387ef5,
+    secondary: #32db64,
+    danger: #f53d3d,
+    light: #f4f4f4,
+    dark: #222,
+    vibrant: rgb(102, 51, 153),
+    bright: #ffc125
+);
+
+.navigation-bar {
+    --background: lightgrey;
+    border-color: grey;
+    height: 56px;
+}
+
+.tab-selection {
+    color: grey;
+}
+
+.padding-top-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: lightgrey;
+    width: 80%;
+    display: flex;
+    margin: 20px auto 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-buttons {
+    --border-radius: 80px;
+    background-color: lightgrey;
+    width: 80%;
+    display: flex;
+    margin: 20px auto 20px;
+    align-items: center;
+}
+
+.user-image {
+    width: 69px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.user-name {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: grey;
+    font-weight: bold;
+}
+
+.back-button {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: xx-large;
+    color: rgb(180, 180, 180);
+}

@@ -1,0 +1,12 @@
+<ion-content>
+  <ion-card class="card">
+    <img class="user-image" src="assets/Avatar-Profile-No-Background.png">
+    <p class="user-name">Hey {{getUserName()}}!</p>
+    <ion-button class="feature-buttons" (click)="goToUpdatePage()">Update Information</ion-button>
+    <ion-button class="feature-buttons">Change Password</ion-button>
+    <ion-button class="feature-buttons" href="resident/notifications">Notifications</ion-button>
+    <ion-button (click)="logout(); signOut()" class="feature-buttons">Sign Out</ion-button>
+    <br>
+    <br>
+  </ion-card>
+</ion-content>
